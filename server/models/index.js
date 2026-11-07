@@ -1,0 +1,11 @@
+require("./User");
+require("./Course");
+require("./Category");
+require("./Lesson");
+require("./Enrollment");
+require("./Payment");
+require("./Review");
+require("./Quiz");
+require("./Certificate");
+require("./Assignment");
+require("./Notification");

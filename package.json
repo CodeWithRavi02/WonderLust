@@ -1,19 +1,40 @@
 {
-  "name": "major_project",
+  "name": "orbit-lms",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Responsive React learning platform with a Node and MongoDB REST API",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test",
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node app.js",
+    "preview": "vite preview",
+    "api": "node app.js",
+    "seed": "node server/seed.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "ejs": "^6.0.1",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.9",
     "express": "^5.2.1",
+    "express-rate-limit": "^8.7.3",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.70.0",
     "mongoose": "^9.8.0",
-    "moongoose": "^0.0.5"
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.2.1",
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^3.4.17",
+    "vite": "^8.3.6"
   }
 }
